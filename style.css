@@ -142,6 +142,33 @@ header .menu ul{
     transition: 0.3s ease;
 }
 
+/* Responsividade Home page */
+
+@media (max-width: 48rem){
+    .Home-text {
+        width: 100%;
+        height: auto;
+        
+    }
+    .Home-text h2{
+        font-size: 5.2rem;
+        text-align: center;
+        line-height: 10rem;
+    }
+    .Home-text p{
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+    .button-container > a{
+        width: 25rem;
+        height: 6rem;
+    }
+}
+
+
+
 /* Estilização página Sobre-Mim */
 
 .Sobre-mim{
@@ -205,6 +232,25 @@ header .menu ul{
     color: #333;
     text-align: justify;
 }
+
+/* Responsividade do Sobre Mim */
+
+@media (max-width: 48rem){
+
+    .about-me-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-camila img{
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .about-text{
+        height: auto;
+    }
+}
+
 
 /* Estilização da página de Serviços */
 
@@ -287,6 +333,15 @@ header .menu ul{
     transition: 0.3s ease;
     transform: scale(1.05);
 }
+
+/* Responsividade Services para dispositivos 480px */
+
+@media (max-width: 48rem){
+    .services-conteiner{
+        flex-direction: column;
+    }
+}
+
 
 /* Estilização da página de Depoimento */
 
