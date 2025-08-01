@@ -79,8 +79,21 @@ header .menu ul{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsividade Header - Dispositivos: 480px */
 
-/* Estilização Página Hero */
+@media (max-width: 48rem){
+    .profile-name h1{
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    .menu > ul > li > a{
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
+
+/* Estilização Página Home */
 
 
 .Home{
@@ -457,7 +470,7 @@ header .menu ul{
 }
 
 
-/* Estilização da página de Contatos */
+/* Estilização da página de Formulário de contato */
 
 .contato{
     width: 100%;
@@ -549,6 +562,16 @@ header .menu ul{
     color: white;
     transition: 0.3s ease
 }
+
+/* Responsividade Formulário de Contato - Dispositivo: 480px*/
+
+@media (max-width: 48rem){
+    .form-container{
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
 
 footer{
     width: 100%;
