@@ -39,13 +39,15 @@ header{
 
 header .profile-name{
     font-family: "WDXL Lubrifont TC", sans-serif;
-    font-size: 1.6rem;
+
 }
 
 .profile-name h1{
     font-family: "WDXL Lubrifont TC", sans-serif;
     letter-spacing: 0.5rem;
     font-weight: 100;
+    font-size: 3.2rem;
+    
 }
 
 header .menu ul{
@@ -81,16 +83,19 @@ header .menu ul{
 
 /* Responsividade Header - Dispositivos: 480px */
 
-@media (max-width: 48rem){
+@media (min-width: 320px) and (max-width: 480px){
     .profile-name h1{
         font-size: 2rem;
         letter-spacing: 0.1rem;
     }
     .menu > ul > li > a{
+        font-size: 1.4rem;
         margin: 0;
         padding: 1rem;
     }
 }
+
+
 
 
 /* Estilização Página Home */
@@ -159,14 +164,14 @@ header .menu ul{
 
 /* Responsividade Home page */
 
-@media (max-width: 48rem){
+@media (min-width: 450px) and (max-width: 480px){
     .Home-text {
         width: 100%;
         height: auto;
         
     }
     .Home-text h2{
-        font-size: 5.2rem;
+        font-size: 5rem;
         text-align: center;
         line-height: 10rem;
     }
@@ -182,6 +187,31 @@ header .menu ul{
     }
 }
 
+@media (min-width: 320px) and (max-width: 450px){
+    .Home-text {
+        width: 100%;
+        height: auto;
+        
+    }
+    .Home-text h2{
+        font-size: 3.8rem;
+        text-align: center;
+        line-height: 10rem;
+    }
+    .Home-text p{
+        width: 100%;
+        height: auto;
+        font-size: 
+        1.6rem;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+    .button-container > a{
+        font-size: 1.6rem;
+        width: 20rem;
+        height: 6rem;
+    }
+}
 
 
 /* Estilização página Sobre-Mim */
@@ -250,7 +280,7 @@ header .menu ul{
 
 /* Responsividade do Sobre Mim */
 
-@media (max-width: 48rem){
+@media (min-width: 400px) and (max-width: 480px){
 
     .about-me-container{
         flex-direction: column;
@@ -263,7 +293,28 @@ header .menu ul{
     .about-text{
         height: auto;
     }
+
+
 }
+
+@media (min-width: 320px) and (max-width: 410px){
+
+    .about-me-container{
+        flex-direction: column;
+    }
+    .img-camila img{
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .about-text{
+        height: auto;
+        width: 35rem;
+    }
+
+    
+}
+
 
 
 /* Estilização da página de Serviços */
@@ -350,7 +401,7 @@ header .menu ul{
 
 /* Responsividade Services para dispositivos 480px */
 
-@media (max-width: 48rem){
+@media (min-width: 410px) and (max-width: 480px){
     .services{
         height: auto;
         padding: 2rem 0;
@@ -363,6 +414,26 @@ header .menu ul{
     .services-conteiner{
         flex-direction: column;
         height: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 410px){
+    .services{
+        height: auto;
+        padding: 2rem 0;
+        gap: 5rem;
+    }
+
+    .services-title{
+        height: auto;
+    }
+    .services-conteiner{
+        flex-direction: column;
+        height: auto;
+    }
+    .services-conteiner article{
+        width: 35rem;
+        padding: 1rem;
     }
 }
 
@@ -452,7 +523,7 @@ header .menu ul{
 
 /* Responsividade Depoimento */
 
-@media (max-width: 48rem){
+@media ((min-width: 410px) and (max-width: 480px)){
     .depoimento{
         height: auto;
         padding: 2rem 0;
@@ -466,6 +537,28 @@ header .menu ul{
     .depoimento-container{
         flex-direction: column;
         height: auto;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 410px)){
+    .depoimento{
+        height: auto;
+        padding: 2rem 0;
+        gap: 5rem;
+    }
+    .img-depoimento img{
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .depoimento-container{
+        flex-direction: column;
+        height: auto;
+        /* width: ; */
+    }
+
+    .text-depoimento{
+        width: 35rem;
     }
 }
 
@@ -565,7 +658,7 @@ header .menu ul{
 
 /* Responsividade Formulário de Contato - Dispositivo: 480px*/
 
-@media (max-width: 48rem){
+@media ((min-width: 410px) and (max-width: 480px)){
     .form-container{
         width: 100%;
         padding: 0 1rem;
