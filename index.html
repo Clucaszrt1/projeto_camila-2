@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Camila Lopes</title>
     <link rel="stylesheet" href="style.css">
-    <favicon rel="icon" href="https://icon.horse/icon/dev.to" type="image/x-icon">
 </head>
 <body>
 
 <!-- Header e links de navegação -->
 
     <header>
-        <div class="profile-name">
+        <div class="profile-title">
             <h1>Camila Lopes</h1>
         </div>
 
-        <nav class ="menu">
-            <ul>
-                <li>
+    <nav class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-item">
                     <a href="#Hero" aria-current="page">Home</a>
                 </li>
-                <li>
+                <li class="menu-item">
                     <a href="#Sobre">Sobre</a>
                 </li>
-                <li>
+                <li class="menu-item">
                     <a href="#Serviços">Serviços</a>
                 </li>
-                <li>
+                <li class="menu-item">
                     <a href="#Contatos">Contatos</a>
                 </li>
             </ul>
@@ -37,72 +36,55 @@
 <!-- Conteúdo principal da Página -->
    
     <main>
-        <section class="Home" id="Hero"> <!-- Seção de apresentação da página -->
-
-                <div class = "Home-text">
-                        <h2>TRANSFORMANDO IDEIAS EM IDENTIDADE VISUAL</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic placeat! Placeat veniam perspiciatis dolorem accusantium nihil, ipsum animi voluptas modi beatae aut explicabo expedita eligendi facilis quos enim vel? </p>
+        <section class="home-container" id="Hero"> <!-- Seção de apresentação da página -->
+            <div class="home-text text-container">
+                <div class="section-title">
+                    <h2>TRANSFORMANDO IDEIAS EM IDENTIDADE VISUAL</h2>
                 </div>
-
-                <div class ="button-container">
-                     <a href="#Serviços">Fale comigo</a>
-                </div>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic placeat! Placeat veniam perspiciatis dolorem accusantium nihil, ipsum animi voluptas modi beatae aut explicabo expedita eligendi facilis quos enim vel?</p>
+            </div>
+            <a href="#Contatos" class="btn-link btn">Fale comigo</a>
         </section>
 
-        <section class ="Sobre-mim" id="Sobre"> <!--Seção Sobre-mim-->
-            <div class="about-me-container">
-
-                <div class="img-camila">
-                    <img src="./images/camila-lopes.jpg" alt="Foto de Camila Lopes">
+        <section class="about-me-container" id="Sobre"> <!--Seção Sobre-mim-->
+            <div class="section-title">
+                <h2>Sobre mim</h2>
+            </div>
+            <div class="img-container">
+                <img src="./images/camila-lopes.jpg" alt="Foto de Camila Lopes, designer visual">
+            </div>
+            <div class="text-container">
+                <div class="section-subtitle">
+                    <h3>Sobre mim</h2>
+                    <h4>Design / Visual</h4>
                 </div>
-
-                <div class ="about-text">
-                    <div class="titles-text">
-                        <h2>Sobre mim</h2>
-                        <h3>Design / Visual</h3>
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nisi eius amet repellendus illum sunt, tempore earum ab repellat numquam quis reprehenderit distinctio aliquid consectetur, libero quidem illo ut a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestiae sit laudantium. Quisquam tempora atque repellendus optio molestiae sapiente possimus consectetur! Neque fugit natus asperiores in temporibus illo dolorum tempore.</p>
-
-                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nisi eius amet repellendus illum sunt, tempore earum ab repellat numquam quis reprehenderit distinctio aliquid consectetur, libero quidem illo ut a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestiae sit laudantium. Quisquam tempora atque repellendus optio molestiae sapiente possimus consectetur! Neque fugit natus asperiores in temporibus illo dolorum tempore.</p>
             </div>
         </section>
 
 
-    <section class= "services" id="Serviços"> <!-- Seção de serviços oferecidos -->
-
-        <div class ="services-title">
+    <section class="services-container" id="Serviços"> <!-- Seção de serviços oferecidos -->
+        <div class="section-title">
             <h2>Serviços</h2>
         </div>
-
-        <div class="services-conteiner"> <!-- Container para os serviços -->
-            <article> <!-- Artigo para o serviço de Branding -->
-                <div>
-                    <img src="./images/branding.png" alt="Logo de serviço de branding">
-                </div>
-                <div>
+        <div class="articles-services-container"> <!-- Container para os serviços -->
+            <article class="services-item">
+                <div class="services-content">
+                    <img src="./images/branding.png" alt="Ícone de Branding">
                     <h3>Branding</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic provident voluptatem doloribus magni quasi delectus. Voluptatem nulla, quis reprehenderit corporis sit dicta, iusto illum illo impedit, dolorum itaque eligendi.</p>
                 </div>
             </article>
-
-            <article> <!-- Artigo para o serviço de Identidade Visual -->
-                <div>
-                    <img src="./images/eye-logo.png" alt="Logo de serviço de identidade visual">
-                </div>
-
-                <div>
+            <article class="services-item">
+                <div class="services-content">
+                    <img src="./images/eye-logo.png" alt="Ícone de Identidade Visual">
                     <h3>Identidade Visual</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, debitis dolor veritatis autem minima vitae vel rerum ea explicabo modi sint aspernatur facere mollitia labore nam inventore illum commodi animi.</p>
                 </div>
             </article>
-
-            <article> <!-- Artigo para o serviço de Design -->
-                <div>
-                    <img src="./images/design-logo.png" alt="Logo de serviço de design ">
-                </div>
-                <div>
+            <article class="services-item">
+                <div class="services-content">
+                    <img src="./images/design-logo.png" alt="Ícone de Design Gráfico">
                     <h3>Design Gráfico</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum explicabo accusantium assumenda numquam suscipit, deleniti id pariatur dicta ad vitae, cumque quam accusamus dolorum rerum temporibus veniam maiores. Eligendi, temporibus.</p>
                 </div>
@@ -110,56 +92,48 @@
         </div>
     </section>
     
-    <section class ="depoimento" id="Depoimento"> <!-- Seção de depoimentos -->
-  
-        <div class="title-depoimento">
+    <section class="testimonial-container"> <!-- Seção de depoimentos -->
+        <div class="section-title">
             <h2>Depoimento</h2>
         </div>
-
-       <div class="depoimento-container">         
-            <div class="img-depoimento">
-                <img src="./images/ceo-depoimento.jpg" alt="Foto do CEO do depoimento">
+        <div class="testimonial-content">
+            <div class="img-container">
+                <img src="./images/ceo-depoimento.jpg" alt="Foto de João da Silva, CEO da empresa XYZ">
             </div>
-            <div class="text-depoimento">
-                <h3>João da Silva</h3>
-                <h4>CEO da empresa XYZ</h4>
-
-                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem officiis tempora qui, dolorum ut, saepe tenetur voluptatem facere quas suscipit, alias earum voluptates error aspernatur ea consectetur a maiores! Reprehenderit!" ---- João da silva</p>
+            <div class="text-container">
+                <div class="section-subtitle">
+                    <h3>João da Silva</h3>
+                    <h4>CEO da empresa XYZ</h4>
+                </div>
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem officiis tempora qui, dolorum ut, saepe tenetur voluptatem facere quas suscipit, alias earum voluptates error aspernatur ea consectetur a maiores! Reprehenderit!" ---- João da Silva</p>
             </div>
         </div>
     </section>
 
-    <section class ="contato" id="Contatos"> <!-- Seção de contato -->
-
+    <section class="contact-container" id="Contatos"> <!-- Seção de contato -->
+        <div class="section-title">
             <h2>Contato</h2>
-
-        <div class ="form-container">
-            <form action="" class ="form">
-
-                <label for="name">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-
-                <textarea name="message" id="message" placeholder="Deixe aqui o seu recado"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
         </div>
+        <form action="" class="form-container">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Deixe aqui o seu recado"></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
     </section>
 
 </main>
 
 
-<footer> <!-- Rodapé da página -->
-    <div class="footer-container">
-        <div class="footer-text">
-            <p>Desenvolvido por Caio Lucas</p>
-        </div>
-        <div class="social-links">  
-          <a href="https://www.linkedin.com/in/caio-lucas-118525343" target="_blank" rel="noopener noreferrer">  Linkedin</a>
-          <a href="https://github.com/Caio-Dev0" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-
+<footer class="footer-container"> <!-- Rodapé da página -->
+    <div class="footer-text">
+        <p>Desenvolvido por Caio Lucas</p>
+    </div>
+    <div class="social-links">  
+        <a href="https://www.linkedin.com/in/caio-lucas-118525343" target="_blank" rel="noopener noreferrer">  Linkedin</a>
+        <a href="https://github.com/Caio-Dev0" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
 </footer>
 
