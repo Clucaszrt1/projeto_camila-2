@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Camila Lopes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
 
 <!-- Header e links de navegação -->
 
-    <header>
+    <header class="header-container">
         <div class="profile-title">
             <h1>Camila Lopes</h1>
         </div>
@@ -24,7 +25,7 @@
                     <a href="#Sobre">Sobre</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#Serviços">Serviços</a>
+                    <a href="#Skills">Skills</a>
                 </li>
                 <li class="menu-item">
                     <a href="#Contatos">Contatos</a>
@@ -34,12 +35,17 @@
     </header>
 
 <!-- Conteúdo principal da Página -->
-   
     <main>
         <section class="home-container" id="Hero"> <!-- Seção de apresentação da página -->
             <div class="home-text text-container">
                 <div class="section-title">
-                    <h2>TRANSFORMANDO IDEIAS EM IDENTIDADE VISUAL</h2>
+                    <h2>
+                        <span>TRANSFORMANDO</span>
+                        <span>IDEIAS</span>
+                        <span>EM</span>
+                        <span>IDENTIDADE</span>
+                        <span>VISUAL</span>
+                    </h2>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic placeat! Placeat veniam perspiciatis dolorem accusantium nihil, ipsum animi voluptas modi beatae aut explicabo expedita eligendi facilis quos enim vel?</p>
             </div>
@@ -50,92 +56,94 @@
             <div class="section-title">
                 <h2>Sobre mim</h2>
             </div>
-            <div class="img-container">
-                <img src="./images/camila-lopes.jpg" alt="Foto de Camila Lopes, designer visual">
-            </div>
-            <div class="text-container">
-                <div class="section-subtitle">
-                    <h3>Sobre mim</h2>
-                    <h4>Design / Visual</h4>
+            <div class="section-content">
+                <div class="img-container">
+                    <img src="./images/camila-lopes.jpg" alt="Foto de Camila Lopes, designer visual">
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nisi eius amet repellendus illum sunt, tempore earum ab repellat numquam quis reprehenderit distinctio aliquid consectetur, libero quidem illo ut a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestiae sit laudantium. Quisquam tempora atque repellendus optio molestiae sapiente possimus consectetur! Neque fugit natus asperiores in temporibus illo dolorum tempore.</p>
+                <div class="text-container">
+                    <div class="section-subtitle">
+                        <h3>Camila Lopes</h2>
+                        <h4>Design | UX/UI</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nisi eius amet repellendus illum sunt, tempore earum ab repellat numquam quis reprehenderit distinctio aliquid consectetur, libero quidem illo ut a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestiae sit laudantium. Quisquam tempora atque repellendus optio molestiae sapiente possimus consectetur! Neque fugit natus asperiores in temporibus illo dolorum tempore.</p>
+                </div>
             </div>
         </section>
 
 
-    <section class="services-container" id="Serviços"> <!-- Seção de serviços oferecidos -->
-        <div class="section-title">
-            <h2>Serviços</h2>
-        </div>
-        <div class="articles-services-container"> <!-- Container para os serviços -->
-            <article class="services-item">
-                <div class="services-content">
-                    <img src="./images/branding.png" alt="Ícone de Branding">
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic provident voluptatem doloribus magni quasi delectus. Voluptatem nulla, quis reprehenderit corporis sit dicta, iusto illum illo impedit, dolorum itaque eligendi.</p>
-                </div>
-            </article>
-            <article class="services-item">
-                <div class="services-content">
-                    <img src="./images/eye-logo.png" alt="Ícone de Identidade Visual">
-                    <h3>Identidade Visual</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, debitis dolor veritatis autem minima vitae vel rerum ea explicabo modi sint aspernatur facere mollitia labore nam inventore illum commodi animi.</p>
-                </div>
-            </article>
-            <article class="services-item">
-                <div class="services-content">
-                    <img src="./images/design-logo.png" alt="Ícone de Design Gráfico">
-                    <h3>Design Gráfico</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum explicabo accusantium assumenda numquam suscipit, deleniti id pariatur dicta ad vitae, cumque quam accusamus dolorum rerum temporibus veniam maiores. Eligendi, temporibus.</p>
-                </div>
-            </article>
-        </div>
-    </section>
-    
-    <section class="testimonial-container"> <!-- Seção de depoimentos -->
-        <div class="section-title">
-            <h2>Depoimento</h2>
-        </div>
-        <div class="testimonial-content">
-            <div class="img-container">
-                <img src="./images/ceo-depoimento.jpg" alt="Foto de João da Silva, CEO da empresa XYZ">
+        <section class="skills-container" id="Skills"> <!-- Seção de serviços oferecidos -->
+            <div class="section-title">
+                <h2>Skills</h2>
             </div>
-            <div class="text-container">
-                <div class="section-subtitle">
-                    <h3>João da Silva</h3>
-                    <h4>CEO da empresa XYZ</h4>
-                </div>
-                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem officiis tempora qui, dolorum ut, saepe tenetur voluptatem facere quas suscipit, alias earum voluptates error aspernatur ea consectetur a maiores! Reprehenderit!" ---- João da Silva</p>
+            <div class="skills-items-container"> <!-- Container para os serviços -->
+                <article class="skill-item">
+                    <div class="skill-content">
+                        <img src="./images/branding.png" alt="Ícone de Branding">
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic provident voluptatem doloribus magni quasi delectus. Voluptatem nulla, quis reprehenderit corporis sit dicta, iusto illum illo impedit, dolorum itaque eligendi.</p>
+                    </div>
+                </article>
+                <article class="skill-item">
+                    <div class="skill-content">
+                        <img src="./images/eye-logo.png" alt="Ícone de Identidade Visual">
+                        <h3>Identidade Visual</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, debitis dolor veritatis autem minima vitae vel rerum ea explicabo modi sint aspernatur facere mollitia labore nam inventore illum commodi animi.</p>
+                    </div>
+                </article>
+                <article class="skill-item">
+                    <div class="skill-content">
+                        <img src="./images/design-logo.png" alt="Ícone de Design Gráfico">
+                        <h3>Design Gráfico</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum explicabo accusantium assumenda numquam suscipit, deleniti id pariatur dicta ad vitae, cumque quam accusamus dolorum rerum temporibus veniam maiores. Eligendi, temporibus.</p>
+                    </div>
+                </article>
             </div>
+        </section>
+
+        <section class="testimonial-container"> <!-- Seção de depoimentos -->
+            <div class="section-title">
+                <h2>Depoimento</h2>
+            </div>
+            <div class="testimonial-content">
+                <div class="img-container">
+                    <img src="./images/ceo-depoimento.jpg" alt="Foto de João da Silva, CEO da empresa XYZ">
+                </div>
+                <div class="text-container">
+                    <div class="section-subtitle">
+                        <h3>João da Silva</h3>
+                        <h4>CEO da empresa XYZ</h4>
+                    </div>
+                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem officiis tempora qui, dolorum ut, saepe tenetur voluptatem facere quas suscipit, alias earum voluptates error aspernatur ea consectetur a maiores! Reprehenderit!" ---- João da Silva</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-container" id="Contatos"> <!-- Seção de contato -->
+            <div class="section-title">
+                <h2>Contato</h2>
+            </div>
+            <form action="" class="form-container">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="Deixe aqui o seu recado"></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer class="footer-container"> <!-- Rodapé da página -->
+        <div class="footer-text">
+            <p>© Caio Lucas</p>
         </div>
-    </section>
-
-    <section class="contact-container" id="Contatos"> <!-- Seção de contato -->
-        <div class="section-title">
-            <h2>Contato</h2>
+        <div class="social-links">  
+            <a href="https://www.linkedin.com/in/caio-lucas-118525343" target="_blank" rel="noopener noreferrer">  Linkedin</a>
+            <a href="https://github.com/Caio-Dev0" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        <form action="" class="form-container">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Nome">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Email">
-            <textarea name="message" id="message" placeholder="Deixe aqui o seu recado"></textarea>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </section>
-
-</main>
-
-
-<footer class="footer-container"> <!-- Rodapé da página -->
-    <div class="footer-text">
-        <p>Desenvolvido por Caio Lucas</p>
-    </div>
-    <div class="social-links">  
-        <a href="https://www.linkedin.com/in/caio-lucas-118525343" target="_blank" rel="noopener noreferrer">  Linkedin</a>
-        <a href="https://github.com/Caio-Dev0" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
-</footer>
+    </footer>
 
 
 </body>
